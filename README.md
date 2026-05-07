@@ -1,4 +1,4 @@
-# claude-skills
+# my-skills-claude-code
 
 A shared collection of Claude Code skills for the team. Clone once, run the installer, and get updated skills automatically via `git pull`.
 
@@ -7,16 +7,24 @@ A shared collection of Claude Code skills for the team. Clone once, run the inst
 ## What's inside
 
 ```
-claude-skills/
+my-skills-claude-code/
 ├── README.md
-├── skills/
-│   ├── hello-skill/
-│   │   └── SKILL.md
-│   └── sprint-ticket-writer/
-│       └── SKILL.md
-└── install/
-    └── install.py
+├── install/
+│   └── install.py
+└── skills/
+    ├── hello-skill/
+    │   └── SKILL.md
+    └── hello-skill-python/
+        ├── SKILL.md
+        └── hello.py
 ```
+
+| Skill | Description |
+|---|---|
+| `hello-skill` | Greets the user using bash tools (`whoami`, `Get-Date`) |
+| `hello-skill-python` | Greets the user using a Python script |
+
+Both skills exist to validate that Claude Code is loading skills correctly and to demonstrate two different implementation approaches.
 
 ---
 
@@ -33,13 +41,13 @@ claude-skills/
 ### 1. Clone the repo
 
 ```powershell
-git clone https://github.com/zaibootcr/claude-skills.git C:\Tools\claude-skills
+git clone https://github.com/zaiboot/my-skills-claude-code.git C:\Tools\my-skills-claude-code
 ```
 
 ### 2. Run the installer
 
 ```powershell
-python C:\Tools\claude-skills\install\install.py
+python C:\Tools\my-skills-claude-code\install\install.py
 ```
 
 ### 3. Verify
@@ -51,7 +59,7 @@ ls $env:USERPROFILE\.claude\skills
 ### Updating skills
 
 ```powershell
-cd C:\Tools\claude-skills
+cd C:\Tools\my-skills-claude-code
 git pull
 ```
 
@@ -64,13 +72,13 @@ No reinstall needed — the junction picks up changes immediately.
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/zaibootcr/claude-skills.git ~/Tools/claude-skills
+git clone https://github.com/zaiboot/my-skills-claude-code.git ~/Tools/my-skills-claude-code
 ```
 
 ### 2. Run the installer
 
 ```bash
-python3 ~/Tools/claude-skills/install/install.py
+python3 ~/Tools/my-skills-claude-code/install/install.py
 ```
 
 ### 3. Verify
@@ -82,7 +90,7 @@ ls -la ~/.claude/skills
 ### Updating skills
 
 ```bash
-cd ~/Tools/claude-skills
+cd ~/Tools/my-skills-claude-code
 git pull
 ```
 
